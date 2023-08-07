@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ákos Bugár Gépe</title>
 </head>
-<body>
+<body onload="">
     <div class="text">
       <h1><strong>Ákos Bugár Gépe</strong></h1>  
     </div>
@@ -15,7 +15,13 @@
             font-family: Franklin-Gothic-Medium;
             src: url(Font.ttf);
         }
-        
+        button{
+            text-align: center;
+            float: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+        }
         body{
             background-color: aliceblue;
             
@@ -136,10 +142,14 @@
         164.56€-t kell gyűjteni</strong>
         <br>
     </div>
-    <audio controls autoplay loop>
+    <audio autoplay loop>
         <source src="audio/website-music.mp3">
         HTML5 nem támogatott ennél a böngészőnél!
     </audio>
+    <br>
+    <button onclick="nyomtatas()">Kinyomtatás</button>
+    <br>
     <script src="codes.js"></script>
+    
 </body>
 </html>
